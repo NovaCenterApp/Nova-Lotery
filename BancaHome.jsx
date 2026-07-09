@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { supabase } from './supabaseClient'
+import BancaListeros from './BancaListeros.jsx'
 
 export default function BancaHome() {
   const [alias, setAlias] = useState('')
