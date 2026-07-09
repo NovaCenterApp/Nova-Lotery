@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { supabase } from './supabaseClient'
 import BancaListeros from './BancaListeros.jsx'
+import BancaResultados from './BancaResultados.jsx'
 
 export default function BancaHome() {
   const [alias, setAlias] = useState('')
@@ -34,6 +35,9 @@ export default function BancaHome() {
       {codigo && <p className="pantalla-msg-sm">Válido por 24 horas. Compártelo por WhatsApp.</p>}
             <div style={{ marginTop: 24 }}>
         <BancaListeros />
+      </div>
+      <div style={{ marginTop: 24 }}>
+        <BancaResultados />
       </div>
 
     </div>
