@@ -32,6 +32,10 @@ export default function BancaHome() {
       {mensaje && <div className="pantalla-msg-sm">{mensaje}</div>}
       {codigo && <div className="code-box">{codigo}</div>}
       {codigo && <p className="pantalla-msg-sm">Válido por 24 horas. Compártelo por WhatsApp.</p>}
+            <div style={{ marginTop: 24 }}>
+        <BancaListeros />
+      </div>
+
     </div>
   )
 }
